@@ -37,3 +37,9 @@ ZIP 包含完整技能文档与辅助脚本，不包含 `@oai/artifact-tool` 运
 - `style_guidelines.md`、`references/template_following.md`、实现说明、API 文档与验证脚本均沿用原版；没有添加新的审批或检查流程。
 
 参考基础为 Presentations 26.905.11957。本技能为独立改编版，不会随原插件更新自动改变。
+
+## RFS / PaperBanana FigureSpec 输入
+
+新增独立离线适配器 `rfs_consumer/`。使用原始 canonical FigureSpec 1.0.0、已选定 bundle、生产者 protocol descriptor 和实际参考图检查记录，可以生成真实 native PPTX，再独立做对象/数据审计、重开和最终文件渲染。它不执行 bundle 的 plot_code.py，不复制模型后端、不自动调用付费服务。安装的宿主必须提供真实 `@oai/artifact-tool`；缺失时明确停止导出，绝不把截图或占位文件宣称为可编辑 PPTX。Python 依赖与详细调用见 [适配器说明](rfs_consumer/README.md)，协议来源与完整许可见 [CONTRACT.md](rfs_consumer/CONTRACT.md)。原有受限第三方材料与 NOTICE 保留原条款。
+
+当前 RFS `prepare_editable` 的 `rfs-native-handoff/1.0` 包使用 adapter 文档中的 `prepare-handoff` 入口，需原 selected bundle、原 FigureSpec 与协议 descriptor；审批及 observed notes 与原图哈希绑定，原交接状态不改写。

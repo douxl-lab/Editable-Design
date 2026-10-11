@@ -1,0 +1,25 @@
+{
+  "source_repository": "https://github.com/douxl-lab/research-figure-skill",
+  "source_commit": "642389edbde500446def6014fe438f32e1d5a4b1",
+  "source_directory": "research-figure/protocol",
+  "paired_repository": "https://github.com/douxl-lab/PaperBanana",
+  "paired_commit": "c3269855ce3d5f2d3efe4434f91adb9fd1948245",
+  "license": "Apache-2.0",
+  "files": {
+    "__init__.py": "4154c2dfe571d7646f78691135115c74fa2b0128b92b8dc9b32e542b7b928f31",
+    "contract.py": "7bea2e1870b889224b407670e6888c440302c9bbe79a4ffc4bfd55d9ffe9481d",
+    "interop.py": "f14942f20175bed8c3d186438e8672ad871c5a7a5f038336cd0bcc2a50c834c9",
+    "schemas/figure-spec-v1.schema.json": "e17aa52651813c299f56faca68c84a1dd119d54cbe128eee7e2b64c45e3bf95f",
+    "schemas/manifest-v1.schema.json": "e4b565da7dd76bdbd33970dae3c770140a818ea67fbf4ca5bb4245b7e74166a8",
+    "LICENSE-APACHE-2.0": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  "descriptor": {
+    "protocol": "paperbanana-rfs-exchange",
+    "schema_version": "1.0.0",
+    "figure_schema_sha256": "57511ad1999f51765d3dbaa7d02a4f547b67a5663717eba34b2a5c5177369159",
+    "manifest_schema_sha256": "322430782b486a994a835b05e6e20dd806a613c328fce5678058ad8575d61d67",
+    "validator_sha256": "7bea2e1870b889224b407670e6888c440302c9bbe79a4ffc4bfd55d9ffe9481d",
+    "request_format": "rfs-generation-request/1.0",
+    "network_calls": false
+  }
+}
